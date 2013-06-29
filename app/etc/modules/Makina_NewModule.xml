@@ -1,0 +1,11 @@
+<config>
+	<modules>
+		<Makina_NewModule>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Mage_Payment />
+			</depends>
+		</Makina_NewModule>
+	</modules>
+</config>
