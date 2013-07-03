@@ -48,7 +48,7 @@
 			</catalog>
 			<page>
 				<rewrite>
-					<html_topmenu>Makina_SimpleTopMenu_Block_TopMenu</html_topmenu>
+					<html_topmenu>Makina_SimpleTopMenu_Block_Topmenu</html_topmenu>
 				</rewrite>
 			</page>
 			<simpletopmenu>
