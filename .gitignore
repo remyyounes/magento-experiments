@@ -17,3 +17,4 @@ downloader
 error_log
 php.init.sample
 booking_pdf/*
+*.DS_Store
