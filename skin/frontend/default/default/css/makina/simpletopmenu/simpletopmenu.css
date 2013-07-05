@@ -1,0 +1,70 @@
+#simpletopmenu {
+    text-align: left;
+}
+
+#simpletopmenu a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 120%;
+    padding:2px 0;
+}
+
+#simpletopmenu a:hover {
+    color: orange;
+}
+
+/*HEADERS*/
+#simpletopmenu > .menu{
+    display: inline-block;
+    padding: 10px;
+}
+
+#simpletopmenu > .menu:hover > .subcontainer{
+    display: block !important;
+}
+
+/*ROOT NODES*/
+#simpletopmenu .menu[data-level="0"] {
+    position: relative;
+}
+
+/*COLUMNS*/
+#simpletopmenu .menu[data-level="0"] > .subcontainer{
+    background: white;
+    display: none;
+    position: absolute;
+    top: 38px;
+    padding: 10px;
+    width:600px;
+    -webkit-column-count: 3;
+    -webkit-column-width: 190px;
+    -webkit-column-rule: 1px solid #ddd;
+}
+
+#simpletopmenu li.menu:not([data-level="0"]) {
+    width:190px;
+}
+
+/*SUBCAT SEPARATION*/
+#simpletopmenu .menu[data-level="1"]:not(:first-child) > a{
+    border-top:1px dashed #ddd;
+    margin-top:10px;
+    padding-top:10px;
+}
+
+/*LEVEL STYLING*/
+#simpletopmenu .menu[data-level="1"] > a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#simpletopmenu .menu[data-level="2"] a{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/*ACTIVE*/
+li.act a {
+    color:red;
+}

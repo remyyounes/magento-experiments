@@ -1,0 +1,16 @@
+<?php
+    $_categories    = $this->getStoreCategories();
+    if (is_object($_categories)) $_categories = $this->getStoreCategories()->getNodes();
+?>
+<div class="nav-container">
+    <ul id="simpletopmenu">
+        <?php foreach ($_categories as $_category): ?>
+            <?php echo $this->drawCustomMenuItem($_category) ?>
+        <?php endforeach ?>
+    </ul>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
