@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Makina_AccordionNavigation>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Makina_AccordionNavigation>
+	</modules>
+</config>

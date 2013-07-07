@@ -1,0 +1,58 @@
+<?xml version="0.1.0"?>
+<config>
+	<tabs>
+		<makina translate="label" module="accordionnavigation">
+			<label>Makina</label>
+			<sort_order>161</sort_order>
+		</makina>
+	</tabs>
+	<sections>
+		<accordion_nav translate="label" module="simpletopmenu">
+			<label>Accordion Navigation</label>
+			<tab>makina</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>200</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>General</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enabled translate="label">
+							<label>Enabled</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enabled>
+						<allowtoggle translate="label">
+							<label>Allow Toggle</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</allowtoggle>
+						<version translate="label">
+							<label>Extention Release</label>
+							<frontend_type>label</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</version>
+					</fields>
+				</general>
+			</groups>
+		</accordion_nav>
+	</sections>
+</config>
