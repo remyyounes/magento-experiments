@@ -65,6 +65,6 @@
 }
 
 /*ACTIVE*/
-li.act a {
+#simpletopmenu li.act a {
     color:red;
 }
