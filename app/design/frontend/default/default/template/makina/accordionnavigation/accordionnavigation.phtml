@@ -1,0 +1,14 @@
+<?php
+    $_categories    = $this->getStoreCategories();
+    if (is_object($_categories)) $_categories = $this->getStoreCategories()->getNodes();
+?>
+<ul id="accordionnavigation">
+    <?php foreach ($_categories as $_category): ?>
+        <?php echo $this->drawCustomMenuItem($_category) ?>
+    <?php endforeach ?>
+</ul>
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>

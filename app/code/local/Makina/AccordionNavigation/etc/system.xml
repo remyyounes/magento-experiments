@@ -1,9 +1,9 @@
-<?xml version="0.1.0"?>
+<?xml version="1.0"?>
 <config>
 	<tabs>
 		<makina translate="label" module="accordionnavigation">
 			<label>Makina</label>
-			<sort_order>161</sort_order>
+			<sort_order>160</sort_order>
 		</makina>
 	</tabs>
 	<sections>
@@ -11,7 +11,7 @@
 			<label>Accordion Navigation</label>
 			<tab>makina</tab>
 			<frontend_type>text</frontend_type>
-			<sort_order>200</sort_order>
+			<sort_order>201</sort_order>
 			<show_in_default>1</show_in_default>
 			<show_in_website>1</show_in_website>
 			<show_in_store>1</show_in_store>

@@ -14,4 +14,55 @@
 			</updates>
 		</layout>
 	</frontend>
+	<adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <accordion_nav translate="title" module="accordion_nav">
+                                            <title><![CDATA[Makina Accordion Navigation]]></title>
+                                            <sort_order>2010</sort_order>
+                                        </accordion_nav>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+	<global>
+		<blocks>
+            <accordionnavigation>
+                <class>Makina_AccordionNavigation_Block</class>
+            </accordionnavigation>
+			<catalog>
+				<rewrite>
+					<navigation>Makina_AccordionNavigation_Block_AccordionNavigation</navigation>
+				</rewrite>
+			</catalog>		
+        </blocks>
+        <helpers>
+			<accordionnavigation>
+				<class>Makina_AccordionNavigation_Helper</class>
+			</accordionnavigation>
+		</helpers>
+	</global>
+	<default>
+		<accordion_nav>
+			<general>
+				<enabled>1</enabled>
+				<allowtoggle>1</allowtoggle>
+				<version>0.1.0</version>
+			</general>
+		</accordion_nav>
+	</default>
 </config>

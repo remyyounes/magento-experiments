@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="left">
+			 <block type="accordionnavigation/accordionnavigation" name="left.accordionnavigation" before="-">
+				<!-- <action method="leftSidebarBlock" /> -->
+			 </block>
+		</reference>
+		<reference name="head">
+			<action method="addCss">
+				<stylesheet>css/makina/accordionnavigation/accordionnavigation.css</stylesheet>
+			</action>
+		</reference>
+	</default>
+</layout> 

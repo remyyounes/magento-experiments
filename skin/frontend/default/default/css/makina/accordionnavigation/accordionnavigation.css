@@ -1,0 +1,30 @@
+#accordionnavigation a {
+	text-decoration: none;
+}
+
+#accordionnavigation .menu[data-level="0"] > a {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#accordionnavigation .menu[data-level="0"] > ul {
+	margin-left: 5px;
+}
+#accordionnavigation .menu[data-level="1"] > ul {
+	margin-left: 10px;
+}
+
+#accordionnavigation .menu[data-level="1"] > a {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#accordionnavigation .menu[data-level="2"] > a {
+	font-size: 11px;
+}
+
+/*ACTIVE*/
+#accordionnavigation li.act > a {
+    color:red;
+}
